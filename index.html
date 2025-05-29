@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translation-key="docTitle">String Theory - An Interactive Journey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Vazirmatn:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+</head>
+<body>
+    <a href="#interactive-content" class="skip-link" data-translation-key="skipLinkText">Skip to main content</a>
+    <div class="container">
+        <header>
+            <h1 id="main-title" data-translation-key="mainPageTitle" aria-label="Toggle dark mode by clicking title" tabindex="0">String Theory</h1>
+            <div class="controls">
+                <div class="lang-switcher">
+                    <button id="lang-en" data-lang="en" class="active-lang" aria-label="Switch to English">English</button>
+                    <button id="lang-fa" data-lang="fa" aria-label="Switch to Persian">فارسی</button>
+                </div>
+                <p class="dark-mode-hint" data-translation-key="darkModeHint">Hint: Click title to toggle dark mode</p>
+            </div>
+        </header>
+
+        <main id="interactive-content" role="main">
+            <section id="intro" class="content-section active" role="tabpanel" aria-labelledby="tab-intro">
+                <h2 id="heading-intro" tabindex="-1" data-translation-key="introHeading"></h2>
+                <p data-translation-key="introP1"></p>
+                <div id="intro-svg" class="svg-placeholder-container visual-placeholder" aria-label="Abstract representation of interconnected ideas">
+                    </div>
+            </section>
+
+            <section id="problem" class="content-section" role="tabpanel" aria-labelledby="tab-problem">
+                <h2 id="heading-problem" tabindex="-1" data-translation-key="problemHeading"></h2>
+                <p data-translation-key="problemP1"></p>
+                <div id="problem-svg" class="svg-placeholder-container visual-placeholder" aria-label="Conceptual visualization of General Relativity vs Quantum Mechanics">
+                    </div>
+            </section>
+
+            <section id="big-idea" class="content-section" role="tabpanel" aria-labelledby="tab-big-idea">
+                <h2 id="heading-big-idea" tabindex="-1" data-translation-key="bigIdeaHeading"></h2>
+                <p data-translation-key="bigIdeaP1"></p>
+                <div id="bigidea-svg" class="svg-placeholder-container visual-placeholder" aria-label="Animation of a string vibrating in different modes">
+                    </div>
+            </section>
+
+            <section id="dimensions" class="content-section" role="tabpanel" aria-labelledby="tab-dimensions">
+                <h2 id="heading-dimensions" tabindex="-1" data-translation-key="dimensionsHeading"></h2>
+                <p data-translation-key="dimensionsP1"></p>
+                <div class="deeper-study">
+                    <strong data-translation-key="dimensionsDeeperStudyTitle"></strong>
+                    <p data-translation-key="dimensionsDeeperStudyP1"></p>
+                </div>
+                <div id="dimensions-svg" class="svg-placeholder-container visual-placeholder" aria-label="Illustration of compactified dimensions">
+                     </div>
+            </section>
+
+            <section id="history-physicists" class="content-section" role="tabpanel" aria-labelledby="tab-history-physicists">
+                <h2 id="heading-history-physicists" tabindex="-1" data-translation-key="historyHeading"></h2>
+                <p data-translation-key="historyP1"></p>
+                <div class="timeline-container" aria-label="Interactive timeline of String Theory history. Click events for details.">
+                    <div class="timeline-event" tabindex="0" role="button" aria-expanded="false" aria-controls="details-event1">
+                        <div class="timeline-date" data-translation-key="historyEvent1Date"></div>
+                        <div class="timeline-milestone-dot"></div>
+                        <div class="timeline-content">
+                            <h3 data-translation-key="historyEvent1Title"></h3>
+                            <p data-translation-key="historyEvent1Desc"></p>
+                            <div class="timeline-details" id="details-event1" role="region" aria-hidden="true">
+                                <p data-translation-key="historyEvent1Details"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-event" tabindex="0" role="button" aria-expanded="false" aria-controls="details-event2">
+                        <div class="timeline-date" data-translation-key="historyEvent2Date"></div>
+                        <div class="timeline-milestone-dot"></div>
+                        <div class="timeline-content">
+                            <h3 data-translation-key="historyEvent2Title"></h3>
+                            <p data-translation-key="historyEvent2Desc"></p>
+                             <div class="timeline-details" id="details-event2" role="region" aria-hidden="true">
+                                <p data-translation-key="historyEvent2Details"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-event" tabindex="0" role="button" aria-expanded="false" aria-controls="details-event3">
+                        <div class="timeline-date" data-translation-key="historyEvent3Date"></div>
+                        <div class="timeline-milestone-dot"></div>
+                        <div class="timeline-content">
+                            <h3 data-translation-key="historyEvent3Title"></h3>
+                            <p data-translation-key="historyEvent3Desc"></p>
+                            <div class="timeline-details" id="details-event3" role="region" aria-hidden="true">
+                                <p data-translation-key="historyEvent3Details"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-event" tabindex="0" role="button" aria-expanded="false" aria-controls="details-event4">
+                        <div class="timeline-date" data-translation-key="historyEvent4Date"></div>
+                        <div class="timeline-milestone-dot"></div>
+                        <div class="timeline-content">
+                            <h3 data-translation-key="historyEvent4Title"></h3>
+                            <p data-translation-key="historyEvent4Desc"></p>
+                            <div class="timeline-details" id="details-event4" role="region" aria-hidden="true">
+                                <p data-translation-key="historyEvent4Details"></p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="timeline-event" tabindex="0" role="button" aria-expanded="false" aria-controls="details-event5">
+                        <div class="timeline-date" data-translation-key="historyEvent5Date"></div>
+                        <div class="timeline-milestone-dot"></div>
+                        <div class="timeline-content">
+                            <h3 data-translation-key="historyEvent5Title"></h3>
+                            <p data-translation-key="historyEvent5Desc"></p>
+                            <div class="timeline-details" id="details-event5" role="region" aria-hidden="true">
+                                <p data-translation-key="historyEvent5Details"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="types-of-theories" class="content-section" role="tabpanel" aria-labelledby="tab-types-of-theories">
+                <h2 id="heading-types-of-theories" tabindex="-1" data-translation-key="typesHeading"></h2>
+                <p data-translation-key="typesP1"></p>
+                 <div id="types-svg" class="svg-placeholder-container visual-placeholder" aria-label="Diagram showing 5 distinct string theory types">
+                    </div>
+            </section>
+
+            <section id="m-theory" class="content-section" role="tabpanel" aria-labelledby="tab-m-theory">
+                <h2 id="heading-m-theory" tabindex="-1" data-translation-key="mTheoryHeading"></h2>
+                <p data-translation-key="mTheoryP1"></p>
+                <div class="deeper-study">
+                    <strong data-translation-key="mTheoryDeeperStudyTitle"></strong>
+                    <p data-translation-key="mTheoryDeeperStudyP1"></p>
+                </div>
+                 <div id="mtheory-svg" class="svg-placeholder-container visual-placeholder" aria-label="Diagram showing M-Theory unifying the 5 string theories">
+                    </div>
+            </section>
+
+            <section id="branes" class="content-section" role="tabpanel" aria-labelledby="tab-branes">
+                <h2 id="heading-branes" tabindex="-1" data-translation-key="branesHeading"></h2>
+                <p data-translation-key="branesP1"></p>
+                 <div id="branes-svg" class="svg-placeholder-container visual-placeholder" aria-label="Illustration of different dimensional branes">
+                    </div>
+            </section>
+            
+            <section id="exotic-spacetimes" class="content-section" role="tabpanel" aria-labelledby="tab-exotic-spacetimes">
+                <h2 id="heading-exotic-spacetimes" tabindex="-1" data-translation-key="exoticHeading"></h2>
+                <p data-translation-key="exoticP1"></p>
+                <h3 data-translation-key="exoticSub1Title"></h3>
+                <p data-translation-key="exoticSub1P1"></p>
+                <h3 data-translation-key="exoticSub2Title"></h3>
+                <p data-translation-key="exoticSub2P1"></p>
+                <h3 data-translation-key="exoticSub3Title"></h3>
+                <p data-translation-key="exoticSub3P1"></p>
+                <div class="deeper-study">
+                    <strong data-translation-key="exoticDeeperStudyTitle"></strong>
+                    <p data-translation-key="exoticDeeperStudyP1"></p>
+                </div>
+                <div id="exotic-svg" class="svg-placeholder-container visual-placeholder" aria-label="Conceptual representation of exotic spacetime or holographic principle">
+                    </div>
+            </section>
+
+            <section id="interactive-lab" class="content-section" role="tabpanel" aria-labelledby="tab-interactive-lab">
+                <h2 id="heading-interactive-lab" tabindex="-1" data-translation-key="labHeading"></h2>
+                <p data-translation-key="labP1"></p>
+                <div id="p5-canvas-container" class="visual-placeholder" aria-label="Interactive p5.js canvas for string visualization. Click and drag to pluck the string." style="display: flex; flex-direction: column; align-items: center; min-height: 350px; cursor: grab;">
+                    </div>
+                <div id="string-controls-lab">
+                    <div class="slider-control">
+                        <label for="mode-slider" id="mode-slider-label" data-translation-key="labMode"></label>
+                        <input type="range" id="mode-slider" min="1" max="5" value="1" step="1" aria-labelledby="mode-slider-label">
+                        <span id="mode-value">1</span>
+                    </div>
+                    <div class="slider-control">
+                        <label for="amplitude-slider" id="amplitude-slider-label" data-translation-key="labAmplitude"></label>
+                        <input type="range" id="amplitude-slider" min="10" max="100" value="50" step="5" aria-labelledby="amplitude-slider-label">
+                        <span id="amplitude-value">50</span>
+                    </div>
+                    <div class="slider-control">
+                        <label for="frequency-slider" id="frequency-slider-label" data-translation-key="labSpeed"></label>
+                        <input type="range" id="frequency-slider" min="1" max="10" value="3" step="1" aria-labelledby="frequency-slider-label">
+                        <span id="frequency-value">0.03</span>
+                    </div>
+                    <div class="toggle-control">
+                         <button id="string-type-toggle" class="lab-button" aria-pressed="false" 
+                                 data-translation-key-closed="labToggleOpenDefault" 
+                                 data-translation-key-open="labToggleOpenActive">
+                                 </button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="landscape" class="content-section" role="tabpanel" aria-labelledby="tab-landscape">
+                <h2 id="heading-landscape" tabindex="-1" data-translation-key="landscapeHeading"></h2>
+                <p data-translation-key="landscapeP1"></p>
+                 <div id="landscape-svg" class="svg-placeholder-container visual-placeholder" aria-label="Abstract representation of the String Theory Landscape">
+                    </div>
+            </section>
+            
+            <section id="philosophical-implications" class="content-section" role="tabpanel" aria-labelledby="tab-philosophical-implications">
+                <h2 id="heading-philosophical-implications" tabindex="-1" data-translation-key="philosophyHeading"></h2>
+                <p data-translation-key="philosophyP1"></p>
+                <h3 data-translation-key="philosophySub1Title"></h3>
+                <p data-translation-key="philosophySub1P1"></p>
+                <h3 data-translation-key="philosophySub2Title"></h3>
+                <p data-translation-key="philosophySub2P1"></p>
+                 <h3 data-translation-key="philosophySub3Title"></h3>
+                <p data-translation-key="philosophySub3P1"></p>
+                <div id="philosophy-svg" class="svg-placeholder-container visual-placeholder" aria-label="Abstract visualization of philosophical concepts like interconnected thoughts or a branching reality">
+                    </div>
+            </section>
+
+            <section id="glossary" class="content-section" role="tabpanel" aria-labelledby="tab-glossary">
+                <h2 id="heading-glossary" tabindex="-1" data-translation-key="glossaryHeading"></h2>
+                <p data-translation-key="glossaryP1"></p>
+                <dl class="glossary-list">
+                    <div class="glossary-entry">
+                        <dt role="button" tabindex="0" data-translation-key="glossaryTermString" aria-expanded="false" aria-controls="details-string"></dt>
+                        <dd role="region" id="details-string" data-translation-key="glossaryDefString" aria-hidden="true"></dd>
+                    </div>
+                    <div class="glossary-entry">
+                        <dt role="button" tabindex="0" data-translation-key="glossaryTermSUSY" aria-expanded="false" aria-controls="details-susy"></dt>
+                        <dd role="region" id="details-susy" data-translation-key="glossaryDefSUSY" aria-hidden="true"></dd>
+                    </div>
+                    <div class="glossary-entry">
+                        <dt role="button" tabindex="0" data-translation-key="glossaryTermCompact" aria-expanded="false" aria-controls="details-compact"></dt>
+                        <dd role="region" id="details-compact" data-translation-key="glossaryDefCompact" aria-hidden="true"></dd>
+                    </div>
+                    <div class="glossary-entry">
+                        <dt role="button" tabindex="0" data-translation-key="glossaryTermBrane" aria-expanded="false" aria-controls="details-pbrane"></dt>
+                        <dd role="region" id="details-pbrane" data-translation-key="glossaryDefBrane" aria-hidden="true"></dd>
+                    </div>
+                    <div class="glossary-entry">
+                        <dt role="button" tabindex="0" data-translation-key="glossaryTermDBrane" aria-expanded="false" aria-controls="details-dbrane"></dt>
+                        <dd role="definition" id="details-dbrane" data-translation-key="glossaryDefDBrane" aria-hidden="true"></dd>
+                    </div>
+                    <div class="glossary-entry">
+                        <dt role="button" tabindex="0" data-translation-key="glossaryTermDuality" aria-expanded="false" aria-controls="details-duality"></dt>
+                        <dd role="definition" id="details-duality" data-translation-key="glossaryDefDuality" aria-hidden="true"></dd>
+                    </div>
+                    <div class="glossary-entry">
+                        <dt role="button" tabindex="0" data-translation-key="glossaryTermMTheory" aria-expanded="false" aria-controls="details-mtheory"></dt>
+                        <dd role="definition" id="details-mtheory" data-translation-key="glossaryDefMTheory" aria-hidden="true"></dd>
+                    </div>
+                    <div class="glossary-entry">
+                        <dt role="button" tabindex="0" data-translation-key="glossaryTermCalabi" aria-expanded="false" aria-controls="details-calabi"></dt>
+                        <dd role="definition" id="details-calabi" data-translation-key="glossaryDefCalabi" aria-hidden="true"></dd>
+                    </div>
+                    <div class="glossary-entry">
+                        <dt role="button" tabindex="0" data-translation-key="glossaryTermAdSCFT" aria-expanded="false" aria-controls="details-adscft"></dt>
+                        <dd role="definition" id="details-adscft" data-translation-key="glossaryDefAdSCFT" aria-hidden="true"></dd>
+                    </div>
+                    <div class="glossary-entry">
+                        <dt role="button" tabindex="0" data-translation-key="glossaryTermHolographic" aria-expanded="false" aria-controls="details-holographic"></dt>
+                        <dd role="definition" id="details-holographic" data-translation-key="glossaryDefHolographic" aria-hidden="true"></dd>
+                    </div>
+                </dl>
+            </section>
+
+            <section id="about-project" class="content-section" role="tabpanel" aria-labelledby="tab-about-project">
+                <h2 id="heading-about-project" tabindex="-1" data-translation-key="aboutHeading"></h2>
+                <h3 data-translation-key="aboutPurposeTitle"></h3>
+                <p data-translation-key="aboutPurposeP1"></p>
+                <h3 data-translation-key="aboutHowToTitle"></h3>
+                <p data-translation-key="aboutHowToP1"></p>
+                <h3 data-translation-key="aboutCreatorTitle"></h3>
+                <p data-translation-key="aboutCreatorP1"></p>
+                <h3 data-translation-key="aboutTechTitle"></h3>
+                <p data-translation-key="aboutTechP1"></p>
+                <div id="about-svg" class="svg-placeholder-container visual-placeholder" aria-label="Project or creator logo/icon placeholder">
+                     </div>
+            </section>
+
+             <section id="conclusion" class="content-section" role="tabpanel" aria-labelledby="tab-conclusion">
+                <h2 id="heading-conclusion" tabindex="-1" data-translation-key="conclusionHeading"></h2>
+                <p data-translation-key="conclusionP1"></p>
+                <p data-translation-key="conclusionP2"></p>
+                <div id="conclusion-svg" class="svg-placeholder-container visual-placeholder" aria-label="Inspiring cosmic imagery">
+                     </div>
+            </section>
+
+            <section id="further-reading" class="content-section" role="tabpanel" aria-labelledby="tab-further-reading">
+                <h2 id="heading-further-reading" tabindex="-1" data-translation-key="furtherReadingHeading"></h2>
+                <p data-translation-key="furtherReadingP1"></p>
+                <ul id="resources-list">
+                    <li data-translation-key="furtherReadingBook1"></li>
+                    <li data-translation-key="furtherReadingBook2"></li>
+                    <li data-translation-key="furtherReadingWeb1"></li>
+                    <li data-translation-key="furtherReadingWeb2"></li>
+                    <li data-translation-key="furtherReadingPaper1"></li>
+                    <li data-translation-key="furtherReadingPlaceholder1"></li>
+                    <li data-translation-key="furtherReadingPlaceholder2"></li>
+                </ul>
+                 <div id="furtherreading-svg" class="svg-placeholder-container visual-placeholder" aria-label="Icon representing books and resources">
+                    </div>
+            </section>
+        </main>
+
+        <nav class="navigation-controls">
+            <button id="prev-btn" data-translation-key="navPrevious" aria-label="Previous section"></button>
+            <button id="next-btn" data-translation-key="navNext" aria-label="Next section"></button>
+        </nav>
+
+        <footer>
+            <p data-translation-key="footerText"></p>
+        </footer>
+    </div>
+
+    <script src="js/i18n.js" defer></script>
+    <script src="js/svg_loader.js" defer></script>
+    <script src="js/ui_interactions.js" defer></script>
+    <script src="js/p5_setup.js" defer></script> 
+    <script src="js/main.js" defer></script>     </body>
+</html>
